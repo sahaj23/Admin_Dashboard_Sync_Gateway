@@ -1,0 +1,20 @@
+
+<input type="text" placeholder="Username" [(ngModel)]="form.username" />
+<input type="text" placeholder="Name" [(ngModel)]="form.name" />
+<input type="text" placeholder="Location" [(ngModel)]="form.location" />
+<button (click)="insert()">Add</button>
+<br />
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of people">
+            <td>{{ person.name }}</td>
+            <td>{{ person.location }}</td>
+        </tr>
+    </tbody>
+</table>
