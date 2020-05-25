@@ -1,0 +1,86 @@
+<form  #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <label for="inputName">Name</label>
+    <div class="form-label-group">
+      <input
+        type="text"
+        class="form-control input-group-lg"
+        id="inputName"
+        placeholder="Name"
+        required
+        autofocus
+        ngModel
+        name="name"
+      />
+      <!--  -->
+    </div>
+    <label for="inputName">Password</label>
+    <div class="form-label-group">
+      <input
+        type="text"
+        class="form-control input-group-lg"
+        id="inputPassword"
+        placeholder="Password"
+        required
+        autofocus
+        ngModel
+        name="password"
+      />
+      <!--  -->
+    </div>
+    <label for="inputName">Admin Channels</label>
+    <div class="form-label-group">
+      <input
+        type="text"
+        class="form-control input-group-lg"
+        id="inputAdminChannels"
+        placeholder="Admin Channels"
+        autofocus
+        ngModel
+        name="adminChannels"
+      />
+      <!--  -->
+    </div>
+    <label for="inputName">Admin Roles</label>
+    <div class="form-label-group">
+      <input
+        type="text"
+        class="form-control input-group-lg"
+        id="inputAdminRoles"
+        placeholder="Admin roles"
+        autofocus
+        ngModel
+        name="adminRoles"
+      />
+      <!--  -->
+    </div>
+    <label for="inputName">Email</label>
+    <div class="form-label-group">
+      <input
+        type="email"
+        class="form-control input-group-lg"
+        id="inputEmail"
+        placeholder="Email"
+        required
+        autofocus
+        ngModel
+        name="name"
+      />
+      <!--  -->
+    </div>
+
+    <button
+      class="btn btn-lg btn-primary btn-block"
+      type="submit"
+      id="addUser"
+    >
+      Add user
+    </button>
+    <button
+      class="btn btn-lg btn-primary btn-block"
+      type="button"
+      id="fetchUser"
+      (click)="onFetch()"
+    >
+      Fetch
+    </button>
+  </form>

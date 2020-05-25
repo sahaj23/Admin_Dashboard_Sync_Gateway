@@ -33,6 +33,7 @@ public ngOnInit() {
     this.database.fetch().then(result => {
         this.people = [];
         for(let i = 0; i < result.rows.length; i++) {
+            if(result.rows[i].doc.location=="bhopal")
             this.people.push(result.rows[i].doc);
         }
     }, error => {
